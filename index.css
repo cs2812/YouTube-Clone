@@ -1,0 +1,228 @@
+#show_video{
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: auto;
+    
+}
+#navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 2.5vw;
+        /* border: solid; */
+}
+.incon{
+    width: 100% ;height: 100%;
+}
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;  /* don't go out side*/
+    cursor: pointer;
+}
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+    cursor: pointer;
+}
+.search-box{
+    /* position: relative; */
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    /* text-transform: capitalize; */         /* word ka first latter capital krne k liye */
+}
+
+.search-btn{
+    width: 15%;
+    height: 114%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+.search-btn img{
+    height: 100%;
+}
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: 30%;
+    align-items: center;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-dp{
+    cursor: pointer;
+    height: 28px;
+    width: 26px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+}
+
+/* Slide bar--> */
+
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    padding-right: 10px;
+    /* border: solid; */
+}
+.links{
+    /* display: block; */
+    /* text-transform: capitalize; */    /* word ka first latter capital krne k liye */
+
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;     /* for control Text, going up side*/
+    color: #242424;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;     /*for remove under line*/
+}
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);   /* for hover efect */
+    cursor: pointer;
+    width: 200px;
+}
+.seperator{
+width: 80%;
+margin-left: 1px;
+}
+
+/* filter---> */
+
+.filters{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;               /* for give scroll efect in x axix */
+    overflow-y: hidden;
+}
+
+.filters::-webkit-scrollbar{
+    display: none;                        /*for hide scrollbar */
+}
+
+.filter-options{
+    flex: 0 0 auto;  /* btn k ander text ek dusre k uper aa rha tha*/
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    /* text-transform: capitalize; */
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-options.active{
+    color: #fff;
+    background: #242424;
+}
+
+/* video dox---------> */
+
+.video-container{
+
+    width: calc(100% -250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+    /* border: solid; */
+
+}
+.video{
+    min-height: 250px;
+    height: auto;
+    /* border: solid; */
+}
+.thumbnail{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    /* border: solid; */
+}
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid; */
+    
+}
+.channel-icon{
+    width: 40px;height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    margin-top: -1px;
+}
+.channel-name{
+    font-size: 14px;
+    /* margin: 9px 0; */
+    color: #979797;
+    margin-top: -10px;
+
+}

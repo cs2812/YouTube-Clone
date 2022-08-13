@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <nav></nav> -->
+
+<nav id="navbar">
+    <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <img src="icon/YouTube logo.png" alt="logo" class="logo">
+    <div class="search-box">
+        <input type="text" class="search-bar" id="query" placeholder="search">
+        <button class="search-btn" id="btn" onclick="searchvideo()"><img src="icon/search.png" alt="search-icon"></button>
+    </div>
+    <div class="user-options">
+        <img src="icon/video.png" class="icon" alt="">
+        <img src="icon/grid.png" class="icon" alt="">
+        <img src="icon/bell.png" class="icon" alt="">
+        <div class="user-dp">
+            <img src="icon/profile.jpg" class="user-dp" alt="">
+        </div>
+    </div>
+</nav>  
+
+<!-- sidebar -->
+<div class="side-bar">
+    <a  class="links active"><img src="icon/home.png" alt="">Home</a>
+    <a  class="links"><img src="icon/explore.png" alt="">Explore</a>
+    <a  class="links"><img src="icon/subscription.png" alt="">Subscriptions</a>
+    <hr class="seperator">
+    <a  class="links"><img src="icon/library.png" alt="">Library</a>
+    <a  class="links"><img src="icon/history.png" alt="">History</a>
+    <a  class="links"><img src="icon/your-video.png" alt="">Your video</a>
+    <a  class="links"><img src="icon/watch-later.png" alt="">Watch leater</a>
+    <a  class="links"><img src="icon/liked video.png" alt="">Like video</a>
+    <a  class="links"><img src="icon/show more.png" alt="">Show more</a>
+</div>
+
+<!-- filters -->
+<div class="filters">
+    <button class="filter-options active">All</button>
+    <button class="filter-options">CSS</button>
+    <button class="filter-options">Web development</button>
+    <button class="filter-options">Python</button>
+    <button class="filter-options">Entertainment</button>
+    <button class="filter-options">Marvel</button>
+    <button class="filter-options">Javascript</button>
+    <button class="filter-options">Artificial intelligence</button>
+    <button class="filter-options">Machine learning</button>
+    <button class="filter-options">Trending</button>
+</div>
+
+    <!-- <h1>You Tube</h1> -->
+    <div class="video-container">
+        <!-- <div class="video">
+            <img src="./icon/profile.jpg" class="thumbnail" alt="">
+            <div class="content">
+                <img src="./icon/profile.jpg" class="channel-icon" alt="">
+                <div>
+                    <h3 class="title">youtube clone 2021 | create working youtube clone</h3>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div>-->
+
+    </div> 
+</body>
+</html>
+<script src="index.js"></script>
+
+
+<!-- <iframe 
+    width="560" height="315" 
+    src="https://www.youtube.com/embed/9guLvNgBxh0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; 
+    autoplay; clipboard-write; 
+    encrypted-media; gyroscope; 
+    picture-in-picture" allowfullscreen></iframe> -->
